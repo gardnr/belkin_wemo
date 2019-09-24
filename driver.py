@@ -3,7 +3,7 @@ from ouimeaux.environment import Environment
 from gardnr import drivers, logger
 
 
-class Power(drivers.Power):
+class Wemo(drivers.Power):
 
     def setup(self):
         env = Environment()
