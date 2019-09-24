@@ -1,11 +1,13 @@
-# Wemo
+# Belkin WeMo
+
+The Python package used to communicate with WeMo devices, (ouimeaux)[https://ouimeaux.readthedocs.io/en/latest/], only works with Python version 3.5.7 and lower
 
 [Official site](https://www.wemo.com/)
 
-[Python package docs](https://ouimeaux.readthedocs.io/en/latest/)
+[Device Setup instructions](https://www.belkin.com/us/support-article?articleNum=8218)
 
 ```
-python3 -m pip install -r wemo/requirements.txt
+pip3 install -r wemo/requirements.txt
 
 gardnr add driver wemo1 wemo.driver:Wemo -c device_name="My Wemo"
 ```
