@@ -5,8 +5,12 @@ from gardnr import drivers, logger
 
 class Wemo(drivers.Power):
 
+    discover_seconds = 10
+
     def setup(self):
         env = Environment()
+        env.start()
+        env.discover(seconds=self.discover_seconds)
         self.switch = env.get_switch(self.device_name)
 
     def on(self):
